@@ -65,11 +65,11 @@ function setup(){
         particleSystems[i] = new ParticleSystem(createVector(0, height-10))
     }
     // system = new ParticleSystem(createVector(width/2, 50))
-
+    start = true;
 }
 
 function draw(){
-    background(0);
+    background(252, 55, 108);
     if(start){
         for (let i = 0; i < particleSystems.length; i++){
             let system = particleSystems[i];

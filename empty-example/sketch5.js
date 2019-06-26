@@ -23,9 +23,9 @@ Movers.prototype.update = function(){
 }
 
 Movers.prototype.display = function(){
-    stroke (0);
+    stroke (107, 234, 255);
     strokeWeight(2);
-    fill (255, 127);
+    fill (232, 251, 255);
     ellipse(this.position.x, this.position.y, this.mass * 16, this.mass * 16);
 }
 
@@ -73,7 +73,7 @@ Liquid.prototype.calculateDrag = function(mover){
 
 Liquid.prototype.display = function(){
     noStroke();
-    fill(50);
+    fill(18, 180, 206);
     rect (this.x, this.y, this.w, this.h);
 }
 
@@ -81,12 +81,12 @@ function setup(){
     createCanvas(800, 600);
     // frameRate(300)
 
-    liquid = new Liquid(0, height /2, width, height / 2, 0.1);
-
+    liquid = new Liquid(0, height /2, width, height / 2, 0.15);
+    reset();
 }
 
 function draw(){
-    background(127);
+    background(175, 237, 247);
     
     liquid.display();
 
